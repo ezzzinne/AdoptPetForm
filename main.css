@@ -78,14 +78,3 @@ footer {
     color: #3C3C3C;
     padding: 20px 0 0;
 }
-
-@media (max-width: 480px) {
-    body {
-      font-size: 14px;
-      height: 100vh;
-    }
-
-    main {
-        padding: 10px 10px;
-    }
-}
