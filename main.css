@@ -11,11 +11,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 main {
-    max-width: 800px;
-    padding: 10px 40px;
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
     background-color: #AEDFF7;
     border: 2px solid #FFB347;
     border-radius: 8px;
@@ -44,20 +46,19 @@ label {
     gap: 10px;
 }
 
-input, select {
+input, select, textarea {
     border-radius: 5px;
     height: 30px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
+    padding: 5px;
     border-bottom: 1px solid #ccc;
     outline: transparent;
     background-color: whitesmoke;
 }
 
 textarea {
-    border-radius: 5px;
-    border-bottom: 1px solid #ccc;
-    outline: transparent;
-    background-color: whitesmoke;
+    height: auto;
 }
 
 button {
@@ -65,7 +66,8 @@ button {
     padding: 12px;
     color: white;
     background-color: #FFB347;
-    width: 100px;
+    max-width: 150px;
+    width: 100%;
 }
 
 .button, footer {
@@ -77,4 +79,28 @@ button {
 footer {
     color: #3C3C3C;
     padding: 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    input, select, textarea, button {
+        max-width: 100%; 
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding: 30px 50px;
+    }
+
+    button {
+        max-width: 120px;
+    }
 }
